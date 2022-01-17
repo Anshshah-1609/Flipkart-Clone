@@ -1,0 +1,82 @@
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+li a:hover{
+    color: blue;
+}
+select:hover{
+    color: blue;
+}
+.deal{
+    padding-left: 10px;
+}
+.deal2{
+    padding-left: 30px;
+}
+.dealsproduct{
+    margin: 0 55px 0 55px;
+    border-top: 1px solid rgba(160, 160, 160, 0.397);
+    border-bottom: 1px solid rgba(160, 160, 160, 0.397);
+}
+.header2{
+    margin: 5px 100px 0px 55px;
+    border-top: 1px solid rgba(160, 160, 160, 0.397);
+}
+pre{
+    border: none;
+}
+.musicalproduct{
+    margin:0px 100px 0px 80px;
+    border-top:1px solid rgba(160, 160, 160, 0.397);
+}           
+.btn-light{
+    height:30px;
+    width:100px;
+    color:rgb(22, 106, 231);
+}
+.more{
+    background-color:transparent;
+    border:none;
+    color:white;
+
+}
+#logo{
+    margin-left:200px;
+    margin-right:10px;
+    padding-top:0px;
+}
+.cart{
+    color:white;
+    padding-top:10px;
+}
+#header_select{
+    background-color:transparent;
+    border:none;
+    font-size:10px;
+}
+.header_div{
+    padding-left: 50px;
+}
+#deal_pre,#music_pre{
+    font-size: 12px;
+    margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#product_img{
+    margin-left: 30px;
+}
+.green{
+    color: green;
+}
+#viewall{
+    padding-left:800px;
+    margin-top:15px;
+}
+@media screen and (max-width: 767px) {
+  .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+}
