@@ -1,238 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Filpcart page</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
-       
-       <style>
-            .navbar {
-                margin-bottom: 0;
-                border-radius: 0;
-            }
-            .deal{
-                padding-left:10px;
-            }
-            .deal2{
-                padding-left:30px;
-            }
-            .dealsproduct{
-                margin:0px 55px 0px 55px;
-                border-top:1px solid rgba(160, 160, 160, 0.397);
-                border-bottom:1px solid rgba(160, 160, 160, 0.397);
-            }
-            .header2{
-                margin:5px 100px 0px 80px;
-                border-top:1px solid rgba(160, 160, 160, 0.397);
-            }
-            pre{
-                border:none;
-            }
-            .musicalproduct{
-                margin:0px 100px 0px 80px;
-                border-top:1px solid rgba(160, 160, 160, 0.397);
-            }
-            
-        </style>
-    </head>
-    <body>
-        <!-- Nav-bar Start -->
-        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a style="margin-left:200px;margin-right:10px;padding-top:0px;" href="#">
-                <img src="images/filpkart_logo.jpg" width="70px" height="35px" style="padding-top:0px;">
-                </a>
-              </li>
-              <li>
-                <form class="form-inline" action="/action_page.php">
-                <input class="form-control mr-sm-2 input-field" type="text" placeholder="Search for Products, Brands & more" size="40%">
-                 <i class="material-icons" style="color:white">search</i>
-                 </form>
-              </li>
-              
-              
-            </ul>
-            <ul class="nav">
-                <li class="active">
-                  <a href="#" style="margin-left:150px;padding-top:5px;">
-                    <button class="btn-light" style="height:30px;width:100px;color:rgb(22, 106, 231);">
-                        <b style="padding-bottom: 2px;">Login</b></button>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" style="color:white;margin-left:20px;margin-right:20px;padding-top:10px;"><b>
-                    <select style="background-color:transparent;border:none;color:white;">
-                        <option><b>More</b></option>
-                        <option style="color:black;">About</option>
-                        <option style="color:black;">Buy</option>
-                    </select>
-                    </b></a>
-                </li>
-                <li>
-                    <a href="#" style="color:white;padding-top:10px;"><i class="fa fa-shopping-cart" style="font-size:18px"> &nbsp;Cart</i></a>
-                </li>
-                
-              </ul>
-          </nav>
-          <!-- Nav-bar End -->
+<head>
+    <title>FlipKart page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+<!-- Nav-bar Start -->
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a id="logo" href="#">
+            <img src="images/filpkart_logo.jpg" width="70px" height="35px" style="padding-top:0px;">
+            </a>
+        </li>
+        <li>
+            <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2 input-field" type="text" placeholder="Search for Products, Brands & more" size="40%">
+            <i class="material-icons" style="color:white">search</i>
+            </form>
+        </li>
+    </ul>
+    <ul class="nav">
+        <li>
+            <a href="#" style="margin-left:150px;padding-top:5px;">
+                <button class="btn btn-light">
+                <b>Login</b>
+                </button>
+            </a>
+        </li>
+        <li>
+            <a href="#"><b>
+                <select class="more">
+                <option><b>More</b></option>
+                <option style="color:black;">About</option>
+                <option style="color:black;">Buy</option>
+                </select>
+                </b>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="cart">
+                <i class="fa fa-shopping-cart" style="font-size:18px"> &nbsp;Cart</i>
+            </a>
+        </li>
+    </ul>
+</nav>
+<!-- Nav-bar End -->
 
-          <!-- Header start -->
-    <div class="row" style="margin:10px 100px 0 200px;">
-        <div class="column">
-            <img src="images/container items/top_offers.png" width="50px" height="50px">
-            <p style="font-size:11px;">&nbsp;&nbsp;Top Offers</p>
-        </div>
-        <div class="column" style="padding-left: 50px;">
-            <img src="images/container items/grocery.png" width="50px" height="50px">
-            <p style="font-size:11px;">&nbsp;&nbsp;Grocery</p>
-        </div>
-        <div class="column" style="padding-left: 50px;">
-            <img src="images/container items/mobiles.png" width="50px" height="50px">
-            <p style="font-size:11px;">&nbsp;&nbsp; Mobiles</p>
-        </div>
-        <div class="column" style="padding-left: 50px;">
-            <img src="images/container items/fashion.png" width="50px" height="50px">
-            <p class="dec">
-                <select style="background-color:transparent;border:none;font-size:10px;">
-                <option>Fashion</option>
-                <option>Mens</option>
-                <option>Womem</option>
-            </select></p>
-            
-        </div>
-        <div class="column" style="padding-left: 50px;">
-            <img src="images/container items/electronics.png" width="50px" height="50px">
-            <p class="dec">
-                <select style="background-color:transparent;border:none;font-size:10px;">
-                <option>Electronics</option>
-                <option>Tv</option>
-                <option>Ac</option>
-            </select></p>
-        </div>
-        <div class="column" style="padding-left: 50px;">
-            <img src="images/container items/home.jpg" width="50px" height="50px">
-            <p class="dec">
-                <select style="background-color:transparent;border:none;font-size:10px;">
-                <option>Home</option>
-                <option>Clock</option>
-                <option>Sofa</option>
-            </select></p>
-        </div>
-        <div class="column" style="padding-left: 50px;">
-            <img src="images/container items/appliances.png" width="50px" height="50px">
-            <p class="dec">
-                <select style="background-color:transparent;border:none;font-size:10px;">
-                <option>Appliances</option>
-                <option>Tv</option>
-                <option>Ac</option>
-            </select></p>
-        </div>
-        <div class="column" style="padding-left: 50px;">
-            <img src="images/container items/travel.png" width="50px" height="50px">
-            <p style="font-size:11px;">&nbsp;&nbsp;&nbsp;&nbsp;Travel</p>
-        </div>
-        <div class="column" style="padding-left: 50px;">
-            <img src="images/container items/beauty.png" width="50px" height="50px">
-            <p class="dec">
-                <select style="background-color:transparent;border:none;font-size:10px;">
-                <option>Beauty, Toys & More</option>
-                <option>Toys</option>
-                <option>Ac</option>
-            </select></p>
-        </div>
+<!-- Header start -->
+<div class="row" style="margin:10px 100px 0 200px;">
+    <div class="column">
+        <img src="images/container items/top_offers.png" width="50px" height="50px">
+        <p style="font-size:11px;">&nbsp;&nbsp;Top Offers</p>
     </div>
-       
+    <div class="column header_div">
+        <img src="images/container items/grocery.png" width="50px" height="50px">
+        <p style="font-size:11px;">&nbsp;&nbsp;Grocery</p>
+    </div>
+    <div class="column header_div">
+        <img src="images/container items/mobiles.png" width="50px" height="50px">
+        <p style="font-size:11px;">&nbsp;&nbsp; Mobiles</p>
+    </div>
+    <div class="column header_div">
+        <img src="images/container items/fashion.png" width="50px" height="50px">
+        <p class="dec">
+            <select id="header_select">
+            <option>Fashion</option>
+            <option>Mens</option>
+            <option>Womem</option>
+            </select>
+        </p>
+    </div>
+    <div class="column header_div">
+        <img src="images/container items/electronics.png" width="50px" height="50px">
+        <p class="dec">
+            <select id="header_select">
+            <option>Electronics</option>
+            <option>Tv</option>
+            <option>Ac</option>
+            </select>
+        </p>
+    </div>
+    <div class="column header_div">
+        <img src="images/container items/home.jpg" width="50px" height="50px">
+        <p class="dec">
+            <select id="header_select">
+            <option>Home</option>
+            <option>Clock</option>
+            <option>Sofa</option>
+            </select></p>
+    </div>
+    <div class="column header_div">
+        <img src="images/container items/appliances.png" width="50px" height="50px">
+        <p class="dec">
+            <select id="header_select">
+            <option>Appliances</option>
+            <option>Tv</option>
+            <option>Ac</option>
+            </select>
+        </p>
+    </div>
+    <div class="column header_div">
+        <img src="images/container items/travel.png" width="50px" height="50px">
+        <p style="font-size:11px;">&nbsp;&nbsp;&nbsp;&nbsp;Travel</p>
+    </div>
+    <div class="column header_div">
+        <img src="images/container items/beauty.png" width="50px" height="50px">
+        <p class="dec">
+            <select id="header_select">
+            <option>Beauty, Toys & More</option>
+            <option>Toys</option>
+            <option>Ac</option>
+            </select>
+        </p>
+    </div>
+</div>
 <hr>
+<!-- Header End -->
 
-          <!-- Header End -->
-
-<!-- Deals Start -->
-
+<!-- Deals Section Start -->
 <div class="row" style="margin:0px 100px 0px 100px;">
-    <h6><b style="font-size: 14px;">Deals of The Days</b></h6>&nbsp;&nbsp;&nbsp;
-    <i class="material-icons" style="color:grey;font-size: 20px;;">timer</i>
+    <h5><b>Deals of The Days</b></h5>&nbsp;&nbsp;&nbsp;
+    <i class="material-icons" style="color:grey;font-size: 20px;">timer</i>
     <p style="color:grey;margin-left:10px;">22:07:36 left</p>
     <a href="#" style="padding-left:600px;"><button class="btn-primary">View All</button></a>
 </div>
 
 <div class="row">
-    <div class="col-lg-10 col-md-10 col-sm-6">
+<div class="col-lg-10 col-md-10 col-sm-6">
     <div class="carousel slide" data-bs-ride="carousel" id="myCarousel">
-        
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="row dealsproduct">
 
     <div class="column">
         <br>
-    <img src="images/deals/watch.jpeg" width="90px" height="120px" style="margin-left: 30px;">
-<pre style="font-size: 12px;margin-top: 5px;font-family: Arial, Helvetica, sans-serif;">
+    <img src="images/deals/watch.jpeg" width="90px" height="120px" id="product_img">
+<pre id="deal_pre">
 Casio,Fasttrack,Sonata..
-  <span style="color:green;">Upto 80%+Extra 10%Off</span>
-     <span style="color:grey;">Knockout Deals!</span>
+  <span class="green">Upto 80%+Extra 10%Off</span>
+     <span class="text-muted">Knockout Deals!</span>
 </pre>
     </div>
-
     <div class="column deal">
         <br>
-    <img src="images/deals/home_temple.jpeg" width="100px" height="120px" style="margin-left: 30px;">
-<pre style="font-size: 12px;margin-top: 5px;font-family: Arial, Helvetica, sans-serif;">
+    <img src="images/deals/home_temple.jpeg" width="100px" height="120px" id="product_img">
+<pre id="deal_pre">
   Home Temples & More..
-    <span style="color:green;">Extra 10%Off</span>
-  <span style="color:grey;">Space Saving Furnicture</span>
+    <span class="green">Extra 10%Off</span>
+  <span class="text-muted">Space Saving Furnicture</span>
 </pre>
     </div>
-
     <div class="column deal">
         <br>
-    <img src="images/deals/tablet_case.jpeg" width="85px" height="120px" style="margin-left: 30px;">
-<pre style="font-size: 12px;margin-top: 5px;font-family: Arial, Helvetica, sans-serif;">
+    <img src="images/deals/tablet_case.jpeg" width="85px" height="120px" id="product_img">
+<pre id="deal_pre">
   Premium Tablet Cases
-    <span style="color:green;">Extra 10%Off</span>
-  <span style="color:grey;">For All Top Models</span>
+    <span class="green">Extra 10%Off</span>
+  <span class="text-muted">For All Top Models</span>
 </pre>
     </div>
-
     <div class="column deal">
         <br>
-    <img src="images/deals/home_decor.jpeg" width="80px" height="120px" style="margin-left: 30px;">
-<pre style="font-size: 12px;margin-top: 5px;font-family: Arial, Helvetica, sans-serif;">
+    <img src="images/deals/home_decor.jpeg" width="80px" height="120px"  id="product_img">
+<pre id="deal_pre">
    Best of Home Dcor..
-     <span style="color:green;">From $79</span>
-   <span style="color:grey;">Lowest Price Ever</span>
+     <span class="green">From $79</span>
+   <span class="text-muted">Lowest Price Ever</span>
 </pre>
     </div>
-
     <div class="column deal">
         <br>
-    <img src="images/deals/lava_a1500.jpeg" width="65px" height="120px" style="margin-left: 30px;">
-<pre style="font-size: 12px;margin-top: 5px;font-family: Arial, Helvetica, sans-serif;">
+    <img src="images/deals/lava_a1500.jpeg" width="65px" height="120px" id="product_img">
+<pre id="deal_pre">
        LAVA A1500
-       <span style="color:green;">Flat $830Off</span>
-         <span style="color:grey;">Now $999</span>
+       <span class="green">Flat $830Off</span>
+         <span class="text-muted">Now $999</span>
 </pre>
     </div>
-
     <div class="column deal">
         <br>
-    <img src="images/deals/metronaut.jpeg" width="90px" height="120px" style="margin-left: 30px;">
-<pre style="font-size: 12px;margin-top: 5px;font-family: Arial, Helvetica, sans-serif;">
+    <img src="images/deals/metronaut.jpeg" width="90px" height="120px" id="product_img">
+<pre id="deal_pre">
     Metronaut, Provogue
-   <span style="color:green;">From $249+Extra 10%Off</span>
-    <span style="color:grey;">Jacket Dresses & More</span>
+   <span class="green">From $249+Extra 10%Off</span>
+    <span class="text-muted">Jacket Dresses & More</span>
 </pre>
     </div>
-
-    
-
                 </div>
             </div>
             <div class="carousel-item">
@@ -240,127 +202,104 @@ Casio,Fasttrack,Sonata..
 
                 <div class="column">
                     <br>
-                <img src="images/deals/metronaut.jpeg" width="90px" height="120px" style="margin-left: 30px;">
-        <pre style="font-size: 12px;margin-top: 5px;font-family: Arial, Helvetica, sans-serif;">
+                <img src="images/deals/metronaut.jpeg" width="90px" height="120px" id="product_img">
+        <pre id="deal_pre">
     Metronaut, Provogue
-    <span style="color:green;">From $249+Extra 10%Off</span>
-    <span style="color:grey;">Jacket Dresses & More</span>
+    <span class="green">From $249+Extra 10%Off</span>
+    <span class="text-muted">Jacket Dresses & More</span>
         </pre>
                 </div>
             
                 <div class="column deal">
                     <br>
-                <img src="images/deals/metronaut.jpeg" width="90px" height="120px" style="margin-left: 30px;">
-        <pre style="font-size: 12px;margin-top: 5px;font-family: Arial, Helvetica, sans-serif;">
+                <img src="images/deals/metronaut.jpeg" width="90px" height="120px" id="product_img">
+        <pre id="deal_pre">
     Metronaut, Provogue
-    <span style="color:green;">From $249+Extra 10%Off</span>
-    <span style="color:grey;">Jacket Dresses & More</span>
+    <span class="green">From $249+Extra 10%Off</span>
+    <span class="text-muted">Jacket Dresses & More</span>
         </pre>
                 </div>
                 </div>
             </div>
         </div>
-                <!--button-->
-                <!--<button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-bs-slide="prev"> 
-                     <span class="carousel-control-prev-icon" aria-hidden="true"></span> 
-                     <span class="visually-hidden" style="color:black;font-size:50px;"><</span> 
-                </button>
-                <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-bs-slide="next"> 
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span> 
-                      <span class="visually-hidden" style="color:black;font-size:50px;">></span> 
-                </button>-->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev"> 
-                    <span class="glyphicon glyphicon-chevron-left"></span> 
-                    
-                  </a> 
-                  <a class="right carousel-control" href="#myCarousel" data-slide="next"> 
-                    <span class="glyphicon glyphicon-chevron-right"></span> 
-                    
-                  </a> 
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"> 
+            <span class="glyphicon glyphicon-chevron-left"></span> 
+        </a> 
+        <a class="right carousel-control" href="#myCarousel" data-slide="next"> 
+            <span class="glyphicon glyphicon-chevron-right"></span> 
+        </a> 
                                         
     </div> 
-    </div>
-    <div class="col-md-2 col-lg-2 col-sm-6">
-        <img src="images/ad_banner.jpg" width="90%" height="95%">
-    </div>
 </div>
+<div class="col-md-2 col-lg-2 col-sm-6">
+    <img src="images/ad_banner.jpg" width="90%" height="95%">
+</div>
+</div>
+<!-- Deals Section End -->
 
-
-
-<!-- Deals End -->
-
-<!--  Books & Music Start -->
+<!--  Books & Music Section Start -->
 <div Class="row header2">
     <br>
-    <h6 style="margin-top: 10px;"><b style="font-size: 14px;">Books & Music Intruments</b></h6>
-    <a href="#" style="padding-left:800px;margin-top:15px;"><button class="btn-primary">View All</button></a>
+    <h5 style="margin-top: 10px;"><b>Books & Music Intruments</b></h5>
+    <a href="#" id="viewall"><button class="btn-primary">View All</button></a>
 </div>
-<p style="color:grey;margin-left:100px;">Shop Now!</p>
+<p class="text-muted" style="margin-left:100px;">Shop Now!</p>
 <div class="row musicalproduct">
 
-    <div class="column">
-        <br>
+    <div class="column"><br>
     <img src="images/musical_items/harmoniums.jpeg" width="100px" height="120px" style="margin-left: 30px;">
-<pre style="font-size: 12px;margin-top: 5px;font-family: Arial, Helvetica, sans-serif;">
+<pre id="music_pre">
     Harmoniums
-     <span style="color:green;">Upto 60%Off</span>
+     <span class="green">Upto 60%Off</span>
        <span style="color:grey;">Shop Now!</span>
 </pre>
     </div>
 
-    <div class="column deal2">
-        <br>
+    <div class="column deal2"><br>
     <img src="images/musical_items/flute.jpeg" width="80px" height="120px" style="margin-left: 30px;">
-<pre style="font-size: 12px;margin-top: 5px;font-family: Arial, Helvetica, sans-serif;">
+<pre id="music_pre">
               Flute
-         <span style="color:green;">Upto 80%Off</span>
+         <span class="green">Upto 80%Off</span>
             <span style="color:grey;">Shop Now!</span>
 </pre>
     </div>
 
-    <div class="column deal2">
-        <br>
+    <div class="column deal2"><br>
     <img src="images/musical_items/red_guitars.jpeg" width="90px" height="120px" style="margin-left: 30px;">
-<pre style="font-size: 12px;margin-top: 5px;font-family: Arial, Helvetica, sans-serif;">
+<pre id="music_pre">
        Acoustic Guitars
-         <span style="color:green;">Starting $180</span>
+         <span class="green">Starting $180</span>
            <span style="color:grey;">Juarez Revel..</span>
 </pre>
     </div>
 
-    <div class="column deal2">
-        <br>
+    <div class="column deal2"><br>
     <img src="images/musical_items/musical.jpeg" width="80px" height="120px" style="margin-left: 30px;">
-<pre style="font-size: 12px;margin-top: 5px;font-family: Arial, Helvetica, sans-serif;">
+<pre id="music_pre">
   Musical Accessories..
-   <span style="color:green;">Upto 80%Off</span>
+   <span class="green">Upto 80%Off</span>
      <span style="color:grey;">Shop Now!</span>
 </pre>
     </div>
 
-    <div class="column deal2">
-        <br>
+    <div class="column deal2"><br>
     <img src="images/musical_items/microphone.jpeg" width="80px" height="120px" style="margin-left: 30px;">
-<pre style="font-size: 12px;margin-top: 5px;font-family: Arial, Helvetica, sans-serif;">
+<pre id="music_pre">
    Microphone Accessories..
-       <span style="color:green;">Upto 80%Off</span>
+       <span class="green">Upto 80%Off</span>
           <span style="color:grey;">Shop Now!</span>
 </pre>
     </div>
 
-    <div class="column deal2">
-        <br>
+    <div class="column deal2"><br>
         <img src="images/musical_items/blue_guitars.jpeg" width="90px" height="120px" style="margin-left: 30px;">
-<pre style="font-size: 12px;margin-top: 5px;font-family: Arial, Helvetica, sans-serif;">
+<pre id="music_pre">
        Acoustic Guitars..
-         <span style="color:green;">Starting $1999</span>
+         <span class="green">Starting $1999</span>
            <span style="color:grey;">By Revel</span>
 </pre>
         </div>
-
 </div>
-
 <!-- Books & Music End -->
-       
-    </body>
+</body>
 </html>
