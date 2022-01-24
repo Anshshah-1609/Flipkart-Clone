@@ -2,34 +2,12 @@
     margin-bottom: 0;
     border-radius: 0;
 }
-li a:hover{
-    color: blue;
-}
-select:hover{
-    color: blue;
-}
 .deal{
-    padding-left: 10px;
-}
-.deal2{
-    padding-left: 30px;
-}
-.dealsproduct{
-    margin: 0 55px 0 55px;
-    border-top: 1px solid rgba(160, 160, 160, 0.397);
-    border-bottom: 1px solid rgba(160, 160, 160, 0.397);
-}
-.header2{
-    margin: 5px 100px 0px 55px;
-    border-top: 1px solid rgba(160, 160, 160, 0.397);
+    padding-left: 20px;
 }
 pre{
     border: none;
-}
-.musicalproduct{
-    margin:0px 100px 0px 80px;
-    border-top:1px solid rgba(160, 160, 160, 0.397);
-}           
+}  
 .btn-light{
     height:30px;
     width:100px;
@@ -39,16 +17,21 @@ pre{
     background-color:transparent;
     border:none;
     color:white;
-
+}
+.more:hover,.cart:hover,.login:hover{
+    color: blue;
+}
+.cart{
+    color:white;
+    padding-top:10px;
 }
 #logo{
     margin-left:200px;
     margin-right:10px;
     padding-top:0px;
 }
-.cart{
-    color:white;
-    padding-top:10px;
+img:hover{
+    opacity: 0.6;
 }
 #header_select{
     background-color:transparent;
@@ -56,27 +39,76 @@ pre{
     font-size:10px;
 }
 .header_div{
-    padding-left: 50px;
+    padding-left: 45px;
+}
+.header_div:hover{
+    color: blue;
 }
 #deal_pre,#music_pre{
     font-size: 12px;
     margin-top: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
-#product_img{
+#product_img,#music_img{
     margin-left: 30px;
 }
 .green{
     color: green;
 }
 #viewall{
-    padding-left:800px;
-    margin-top:15px;
+    padding-left:830px;
+    margin-top: 15px;
 }
-@media screen and (max-width: 767px) {
-  .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
+p{
+    margin: auto;
+    font-size: 12px;
+}
+.musicalproduct{
+    margin-left: 60px;
+    margin-right: 40px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.product{
+    margin-left: 60px;
+    margin-right: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.header_music{
+    border-bottom: 1px solid rgba(160, 160, 160, 0.397);;
+}
+.btnview{
+    padding: 5px 10px 0px 10px;
+}
+.timer{
+    color:grey;
+    font-size: 16px;
+}
+.p_view{
+    padding-top: 15px;
+    padding-left:60px;
+}
+.shop_now{
+    padding-top: 0px;
+    font-size:12px;
+}
+@media screen and (max-width: 1000px) {
+  .nav a {
+    float: none;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .column {
+    width: 50%;
+  }
+  .carousel{
+    padding-right: 0px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header_music {
+    width: 70%;
+  }
 }
